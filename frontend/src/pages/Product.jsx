@@ -1,28 +1,17 @@
 import React from 'react'
+import Navbar from '../components.jsx/Navbar'
 
 const Product = () => {
   return (
     <div className="font-sans bg-[#f6f9fc] text-[#1f2a37] leading-relaxed min-h-screen">
 
-      {/* ── Header ── */}
-      <header className="bg-white border-b border-[#e0e8f1] pb-20">
-        <div className="max-w-[1040px] mx-auto px-5">
+      {/* ── Navbar ── */}
+      <Navbar />
 
-          {/* Nav */}
-          <nav className="flex justify-between items-center h-16">
-            <a className="font-bold text-[1.3rem] text-[#1f2a37] no-underline" href="index.html">
-              Price<i className="not-italic text-[#1e90ff]">Watch</i>
-            </a>
-            <ul className="flex gap-1.5 list-none m-0 p-0">
-              <li className="max-[860px]:hidden"><a className="block no-underline text-[#5f6f82] text-[0.95rem] px-3.5 py-2 rounded-lg hover:bg-[#f6f9fc] hover:text-[#1f2a37]" href="index.html#how">How it works</a></li>
-              <li className="max-[860px]:hidden"><a className="block no-underline text-[#5f6f82] text-[0.95rem] px-3.5 py-2 rounded-lg hover:bg-[#f6f9fc] hover:text-[#1f2a37]" href="index.html#deals">Popular deals</a></li>
-              <li className="max-[860px]:hidden"><a className="block no-underline text-[#5f6f82] text-[0.95rem] px-3.5 py-2 rounded-lg hover:bg-[#f6f9fc] hover:text-[#1f2a37]" href="#alert">Price alerts</a></li>
-              <li><a className="block no-underline bg-[#1e90ff] text-white font-semibold text-[0.95rem] px-3.5 py-2 rounded-lg" href="index.html">Check another product</a></li>
-            </ul>
-          </nav>
-
-          {/* Breadcrumb + Title */}
-          <p className="text-[0.85rem] text-[#5f6f82] mt-4">
+      {/* ── Page Header ── */}
+      <div className="bg-white border-b border-[#e0e8f1] pb-20 -mt-[62px] pt-[62px]">
+        <div className="max-w-[1040px] mx-auto px-5 pt-4">
+          <p className="text-[0.85rem] text-[#5f6f82]">
             <a className="text-[#0f6fcf]" href="index.html">Home</a> / Mobiles / Samsung Galaxy M35
           </p>
           <h1 className="text-[clamp(1.5rem,3.6vw,2.2rem)] font-bold mt-2 tracking-tight">
@@ -32,9 +21,8 @@ const Product = () => {
           <span className="inline-block bg-[#e8f7ef] text-[#0a7a47] font-semibold px-4 py-1.5 rounded-full text-[0.95rem]">
             Lowest price: ₹15,999 on Flipkart
           </span>
-
         </div>
-      </header>
+      </div>
 
       <div className="max-w-[1040px] mx-auto px-5">
 
