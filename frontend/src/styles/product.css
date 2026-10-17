@@ -1,0 +1,268 @@
+/* ── CSS Variables ── */
+:root {
+  --bg: #f6f9fc;
+  --tile: #dcebfa;
+  --blue: #1e90ff;
+  --blue-dark: #0f6fcf;
+  --navy: #1f2a37;
+  --ink: #1f2a37;
+  --muted: #5f6f82;
+  --line: #e0e8f1;
+  --card: #fff;
+  --red: #c0392b;
+  --radius: 12px;
+}
+
+/* ── Base ── */
+.product-page * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.product-page {
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.product-page a { color: inherit; }
+.product-page :focus-visible { outline: 3px solid var(--blue-dark); outline-offset: 2px; }
+
+/* ── Layout ── */
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+/* ── Header / Nav ── */
+.top {
+  background: #fff;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 84px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.logo i { font-style: normal; color: var(--blue); }
+
+.nav ul { display: flex; gap: 6px; list-style: none; }
+.nav ul a {
+  display: block;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+.nav ul a:hover { background: var(--bg); color: var(--ink); }
+.nav .cta { background: var(--blue); color: #fff !important; font-weight: 600; }
+
+/* ── Breadcrumb + Title ── */
+.crumb { font-size: 0.85rem; color: var(--muted); margin-top: 18px; }
+.crumb a { color: var(--blue-dark); }
+h1.title {
+  font-size: clamp(1.5rem, 3.6vw, 2.2rem);
+  font-weight: 700;
+  margin-top: 8px;
+  letter-spacing: -0.01em;
+}
+.sub { color: var(--muted); font-size: 0.92rem; margin: 4px 0 14px; }
+.pill {
+  display: inline-block;
+  background: #e8f7ef;
+  color: #0a7a47;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 99px;
+  font-size: 0.95rem;
+}
+
+/* ── Summary Tiles ── */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: -52px;
+  position: relative;
+}
+.tile {
+  background: var(--tile);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+}
+.tile span { font-size: 0.95rem; font-weight: 600; }
+.tile b { display: block; font-size: 1.9rem; font-weight: 600; line-height: 1.25; }
+
+/* ── Cards ── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-top: 18px;
+}
+.card h2 { font-size: 1rem; font-weight: 700; }
+.card .hint { font-size: 0.8rem; color: var(--muted); margin-bottom: 12px; }
+
+/* ── Grid layouts ── */
+.grid { display: grid; gap: 18px; }
+.g2 { grid-template-columns: 1fr 1fr; }
+.g3 { grid-template-columns: 200px 1fr; }
+
+/* ── SVG Charts ── */
+.chart { width: 100%; height: auto; display: block; }
+.chart text { font-size: 10px; fill: var(--muted); }
+.chart .val { fill: var(--ink); font-size: 11px; }
+
+/* ── Platform Filter ── */
+.filter { padding: 26px 4px 6px; }
+.filter h2 { font-size: 0.85rem; font-weight: 600; margin-bottom: 10px; }
+.filter label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.filter input { width: 15px; height: 15px; accent-color: var(--blue); }
+
+/* ── Comparison Table ── */
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th {
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 0 8px 8px;
+}
+.tbl td { padding: 12px 8px; border-top: 1px solid var(--line); }
+.tbl .price { font-weight: 700; }
+.tbl s { display: block; color: var(--muted); font-size: 0.8rem; font-weight: 400; }
+.off {
+  background: #dcedff;
+  color: var(--blue-dark);
+  padding: 2px 10px;
+  border-radius: 99px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+.low td { background: #f1f8ff; }
+.flag { display: block; font-size: 0.75rem; color: var(--blue-dark); }
+.oos { color: var(--red); font-size: 0.85rem; }
+.buy {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.buy:hover { background: var(--blue-dark); }
+.scroll { overflow-x: auto; }
+
+/* ── Range Buttons ── */
+.range { display: flex; gap: 6px; margin-bottom: 8px; }
+.range button {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 99px;
+  padding: 3px 14px;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.range button[aria-pressed="true"] {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+/* ── Prediction ── */
+.verdict { font-size: 1.4rem; font-weight: 700; color: var(--blue-dark); }
+.psub { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+.row { display: flex; justify-content: space-between; font-size: 0.88rem; }
+.bar {
+  height: 10px;
+  background: var(--bg);
+  border-radius: 99px;
+  overflow: hidden;
+  margin: 5px 0 12px;
+}
+.bar b { display: block; height: 100%; background: var(--blue); }
+.bar.up b { background: #f0a35e; }
+.pred ul { margin: 4px 0 0 18px; font-size: 0.88rem; color: var(--muted); }
+.note {
+  margin-top: 12px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+/* ── Alert Form ── */
+.alert-box label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin: 10px 0 4px;
+}
+.alert-box input[type="email"],
+.alert-box input[type="number"] {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font: inherit;
+}
+.alert-box input:focus { border-color: var(--blue); outline: none; }
+.alert-box button {
+  margin-top: 14px;
+  width: 100%;
+  background: var(--blue);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 11px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.alert-box button:hover { background: var(--blue-dark); }
+
+/* ── Footer ── */
+.product-page footer {
+  background: #fff;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  padding: 22px 0;
+  margin-top: 30px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .nav ul li:not(:last-child) { display: none; }
+  .tiles { grid-template-columns: 1fr 1fr; }
+  .g2, .g3 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .tiles { grid-template-columns: 1fr 1fr; }
+  .tile b { font-size: 1.4rem; }
+  .top { padding-bottom: 60px; }
+}
