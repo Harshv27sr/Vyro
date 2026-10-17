@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import '../styles/product.css'
 
 const Product = () => {
@@ -9,16 +8,16 @@ const Product = () => {
       <header className="top">
         <div className="wrap">
           <nav className="nav">
-            <Link className="logo" to="/">Price<i>Watch</i></Link>
+            <a className="logo" href="index.html">Price<i>Watch</i></a>
             <ul>
-              <li><Link to="/#how">How it works</Link></li>
-              <li><Link to="/#deals">Popular deals</Link></li>
+              <li><a href="index.html#how">How it works</a></li>
+              <li><a href="index.html#deals">Popular deals</a></li>
               <li><a href="#alert">Price alerts</a></li>
-              <li><Link className="cta" to="/">Check another product</Link></li>
+              <li><a className="cta" href="index.html">Check another product</a></li>
             </ul>
           </nav>
 
-          <p className="crumb"><Link to="/">Home</Link> / Mobiles / Samsung Galaxy M35</p>
+          <p className="crumb"><a href="index.html">Home</a> / Mobiles / Samsung Galaxy M35</p>
           <h1 className="title">Samsung Galaxy M35 5G (8GB RAM, 128GB)</h1>
           <p className="sub">Model SM-M356B. Prices updated 20 minutes ago.</p>
           <span className="pill">Lowest price: ₹15,999 on Flipkart</span>
