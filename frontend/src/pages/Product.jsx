@@ -9,7 +9,7 @@ const Product = () => {
       <Navbar />
 
       {/* ── Page Header ── */}
-      <div className="bg-white border-b border-[#e0e8f1] pb-20 -mt-[62px] pt-[62px]">
+      <div className="bg-white border-b border-[#e0e8f1] pb-20">
         <div className="max-w-[1040px] mx-auto px-5 pt-4">
           <p className="text-[0.85rem] text-[#5f6f82]">
             <a className="text-[#0f6fcf]" href="index.html">Home</a> / Mobiles / Samsung Galaxy M35
