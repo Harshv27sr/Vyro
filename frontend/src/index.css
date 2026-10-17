@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Headland+One&family=Passion+One:wght@700&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.arimo-font{
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 36px;
+  color: #1E90FF;
+}
+
+.arimo{
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #1F2A37;
+}
