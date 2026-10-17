@@ -3,16 +3,16 @@ import React from 'react'
 const PriceAlerts = () => {
     return (
         <>
-            <section className='w-full h-[290px] py-3 px-24 my-5 flex flex-col gap-4 bg-[#F6F9FC] max-lg:h-auto max-md:px-14'>
+            <section className='w-full py-3 px-24 my-5 flex flex-col gap-4 bg-[#F6F9FC] max-md:px-8 max-sm:px-5'>
 
-                <div className='bg-white rounded-2xl flex p-10 gap-20 border border-gray-300 max-md:p-5'>
+                <div className='bg-white rounded-2xl flex max-sm:flex-col p-10 gap-20 border border-gray-300 max-md:p-5 max-sm:gap-6'>
                     <div className='flex flex-col gap-4'>
 
-                        <h2 className='arimo text-3xl text-[#18202a] max-lg:text-2xl'>Get an email when the price drops</h2>
+                        <h2 className='arimo text-3xl text-[#18202a] max-lg:text-2xl max-sm:text-xl'>Get an email when the price drops</h2>
 
-                        <p className='text-xl opacity-60 max-lg:text-lg'>Open any product, enter your target price and we will watch it for you.</p>
+                        <p className='text-xl opacity-60 max-lg:text-lg max-sm:text-base'>Open any product, enter your target price and we will watch it for you.</p>
 
-                        <button className='bg-[#1E90FF] text-white w-44 h-10 p-2 rounded-xl font-semibold max-lg:w-36 max-lg:h-8 max-lg:p-1 max-lg:text-sm' href="">Try a sample alert</button>
+                        <button className='bg-[#1E90FF] text-white w-44 h-10 p-2 rounded-xl font-semibold max-lg:w-36 max-lg:h-8 max-lg:p-1 max-lg:text-sm max-sm:w-full' href="">Try a sample alert</button>
                     </div>
 
                     <ul className='flex flex-col gap-4 max-lg:gap-2'>

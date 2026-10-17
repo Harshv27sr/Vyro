@@ -9,7 +9,7 @@ import Footer from '../components.jsx/Footer'
 
 const Home = () => {
   return (
-    <div className='w-full h-[2000px] '>
+    <div className='w-full min-h-screen'>
       <Navbar />
       <Hero />
       <About />
